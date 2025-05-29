@@ -1,10 +1,12 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const cors = require('cors')
 const tinaRoutes = require('./routes/tina');
 
 dotenv.config();
 
 const app = express();
+app.use(cors())
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); // Permitir JSON no corpo da requisição

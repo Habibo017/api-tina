@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-axios.post('http://localhost:3000/api/tina/message', {
+axios.post('https://api-tina.onrender.com/api/tina/message', {
   userId: 'usuario123',
   message: 'Oi Tina, tudo bem?'
 })
